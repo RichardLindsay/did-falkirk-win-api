@@ -23,21 +23,21 @@ router.get('/', async(req, res, next) => {
     if (homeTeamNumber == 343) {
       if (homeTeamScore > awayTeamScore) {
         res.json({
-          message: 'Yes'
+          message: 'Yes.'
         });
       } else {
         res.json({
-          message: 'No'
+          message: 'No.'
         });
       }
     } else {
       if (awayTeamScore > homeTeamScore) {
         res.json({
-          message: 'Yes'
+          message: 'Yes.'
         });
       } else {
         res.json({
-          message: 'No'
+          message: 'No.'
         });
       }
     }
