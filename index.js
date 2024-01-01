@@ -22,7 +22,8 @@ app.get("/api", async(req, res, next) => {
     
     let { data } = await axios.get(`${BASE_URL}${PARAMS}`, {
       headers: {
-        'x-rapidapi-key': `${process.env.API_KEY}`,
+        'X-RapidAPI-Key': `${process.env.API_KEY}`,
+        'X-RapidAPI-Host': 'football-web-pages1.p.rapidapi.com',
         'Access-Control-Allow-Origin': '*'
       }
     });
